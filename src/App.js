@@ -42,6 +42,7 @@ function App() {
     
     
     <div className='App' style={{backgroundAttachment:"fixed" }}>
+      <Header />
     
     <section id="s_1">
         <br/><br/><br/>

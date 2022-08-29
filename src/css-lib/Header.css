@@ -1,3 +1,8 @@
+header{
+  height: 60px;
+}
+
+
 #header {
   position: fixed;
   top: 0;
@@ -15,8 +20,15 @@
 #header-wrap {
   position: relative;
   display: block;
-  margin: 0 auto;
-  max-width: 1200px
+  margin: -20px ;
+  height: 100px;
+  overflow: hidden;
+}
+
+#header-wrap:hover{
+  height: 200px;
+  background-color: rgba(255, 255, 255, .8);
+  overflow: visible;
 }
 
 #header-nav {
@@ -47,33 +59,42 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06)
 }
 
-#header.active_submenu>#header-sub-menu {
+/* #header.active_submenu>#header-sub-menu {
   display: block
-}
+} */
+/* 
 #header.active_submenu #header-nav {
   overflow: visible
-}
-
+} */
 
 .header-navBtn {
-  display: block;
-  padding: 18px 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 20px 0px; */
+  height:60px;
+  width: 100px;
   line-height: 24px;
-  font-size: 15px
+  font-size: 15px;
 }
 
 .header-navBtn.header-navBtn-m,
 .header-sub-li.header-navBtn-m>a {
   font-weight: bold;
   color: #222;
-  cursor: default
+  cursor: default;
 }
+
+
 .header-sub-li>a {
-  padding-left: 23px;
-  padding-top: 13px;
+  /* padding-left: 40px; */
+  padding-top: 10px;
   box-sizing: border-box;
-  display: inline-block
+  display: inline-block;
+  text-decoration: none;
 }
+
 .header-sub-li:hover {
   font-weight: bold;
   cursor: pointer;
@@ -86,9 +107,15 @@
   left: -1px;
   color: #7c7c7d;
   line-height: 1.6;
-  font-size: 13px
+  font-size: 13px;
+  list-style: none;
 }
 
 .header-sub-ul:last-child {
-  width: 120px
+  left: -40px;
+  width: 100px;
+}
+
+.header-icon{
+  float: inline-end;
 }
