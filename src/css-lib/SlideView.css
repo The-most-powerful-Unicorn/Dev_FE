@@ -1,0 +1,10 @@
+.container{
+    display: block;
+    text-align: center;
+    top:150vh;
+    position: relative;
+    z-index:3;
+    background:#eee;
+    padding:1600px 0;
+    text-align: center;
+}
