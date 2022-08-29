@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App, { TopButton } from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './Header'
+import SlideView from './SlideView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
