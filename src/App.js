@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import { Link, animateScroll as Scroll } from "react-scroll";
 import './css-lib/button.css';
@@ -22,13 +22,27 @@ const useScroll = () => {
   return state;
 };
 
+function ScrollComponent() {
+  const testRef = useRef(null);
+  const scrollToElement = () => testRef.current.scrollIntoView();
+  // Once the scrollToElement function is run, the scroll will show the element
+  return (
+    <>
+      <div ref={testRef}>Element you want to view</div>
+      <button onClick={scrollToElement}>Trigger the scroll</button>
+    </>
+  );
+}
+
+
+
 function App() {
   const { y } = useScroll();
   return (
     
     
     <div className='App' style={{backgroundAttachment:"fixed" }}>
-        
+    
     <section id="s_1">
         <br/><br/><br/>
         <img class="img_1" src="./img/Gogh-Starry-Night.jpg" style={{ 
@@ -51,6 +65,7 @@ function App() {
     </section>
     <section id="s_4" class='container'>
       <SlideView />
+      <ScrollComponent />    
     </section>
       
       {/* <Header />
