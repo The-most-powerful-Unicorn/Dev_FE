@@ -35,7 +35,7 @@ function Header() {
                         src="./img/logo-2.png"
                             style={{
                                 top: "",
-                                left: "-25vh",
+                                left: "",
                                 width: "25%",
                                 height: "25%",
                             }} /></ul>
@@ -73,7 +73,7 @@ function Header() {
                     </li>
                     
                     <li>
-                        <span class="header-icon"><img src='./img/heart_black.png' width='30' /></span>
+                        <span class="header-icon "><img src='./img/heart_black.png' width='30' /></span>
                     </li>
                     <li>
                         <span class="header-icon"><img src='./img/shopping_black.png' width='30' /></span>

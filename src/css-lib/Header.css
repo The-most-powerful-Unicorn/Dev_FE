@@ -3,6 +3,7 @@ header{
 }
 
 
+
 #header {
   position: fixed;
   top: 0;
@@ -117,5 +118,12 @@ header{
 }
 
 .header-icon{
-  float: inline-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px 0px; */
+
+  width: 50px;
+  line-height: 24px;
+  font-size: 15px;
 }

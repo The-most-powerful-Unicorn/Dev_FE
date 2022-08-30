@@ -50,7 +50,7 @@ function App() {
         transition: "0.5s",
         width: y > 100 ? "30%" : "100%",
         position:"fixed",
-        transform:"translate(-50%, -10%)",
+        transform:"translate(-50%, -15%)",
         }} />
         <div class="scrolldown1"　
       style={{
@@ -68,41 +68,7 @@ function App() {
       <SlideView />
       <ScrollComponent />    
     </section>
-      
-      {/* <Header />
-      <p>
-      <img style={{ 
-        transition: "0.5s",
-        width: y > 100 ? "110%" : "30%",
-        position:"fixed",
-        transform:"translate(-50%, -10%)",
-        }} src="./img/Gogh-Starry-Night.jpg" />
-      </p>
-      <div class="scrolldown1"　
-      style={{
-        display: y> 100? "none": ""
-      }}><span>Scroll</span></div>
-        <img 
-        style={{
-          width: "5%",
-          transition: "0.5s",
-          display: y >100? "":"none",
-          position: "fixed",
-          top:"70vh",
-          right:"0px"}}
-        src="./img/upBtn.png"></img>
-        <div class="bl-filter">
-
-        </div>
-            <div id="container">
-              <SlideView />
-            </div> 
-            <div id="container">
-              <SlideView />
-            </div>  */}
     </div>
-
-
   );
 };
 export default App;
