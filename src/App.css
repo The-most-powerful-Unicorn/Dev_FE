@@ -59,6 +59,7 @@
   bottom:50px;
     /*全体の高さ*/
   height:100px;
+  
 }
 
 /*Scrollテキストの描写*/
@@ -68,7 +69,7 @@
   left: -50px;
   top: -50px;
     /*テキストの形状*/
-  color:Black;
+  color:white;
   font-size: 2rem;
   letter-spacing: 0.1em;
 }
@@ -80,9 +81,9 @@
   position: absolute;
   top: 0;
     /*線の形状*/
-  width: 1px;
+  width: 2px;
   height: 30px;
-  background: Black;
+  background:white;
     /*線の動き1.4秒かけて動く。永遠にループ*/
   animation: pathmove 1.4s ease-in-out infinite;
   opacity:0;
@@ -143,5 +144,50 @@
 }
 
 section{
+  scroll-snap-type: y mandatory;
   height: 100vh;
 }
+
+
+.layer{
+  background-color: black;
+  opacity:0.5;
+  position: fixed;
+  z-index: 5;
+
+  height: 100vh;
+  width: 100vh;
+}
+ 
+.scrollWrap {
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  height: 100vh;
+}
+
+.scrollWrap .cont {
+  scroll-snap-align: start;
+  height: 100vh;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+.scrollWrap .cont:first-of-type {
+  background: #0E7FBD;
+}
+.scrollWrap .cont:nth-of-type(2) {
+  background: #27B75B;
+}
+.scrollWrap .cont:nth-of-type(3) {
+  background: #D47D1B;
+}
+.scrollWrap .cont:nth-of-type(4) {
+  background: #513CB8;
+}
+.scrollWrap .cont:nth-of-type(5) {
+  background: #C52589;
+} */
