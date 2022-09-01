@@ -6,6 +6,7 @@ import './css-lib/button.css';
 
 import SlideView from './SlideView';
 import Header from './Header';
+import Footer from './Footer';
 
 const useScroll = () => {
   const [state, setState] = useState({
@@ -68,6 +69,7 @@ function App() {
       <SlideView />
       <ScrollComponent />    
     </section>
+    <Footer />
       
       {/* <Header />
       <p>
