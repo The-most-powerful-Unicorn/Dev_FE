@@ -16,3 +16,58 @@
   .pagination a.active {
     transform: scale(1.8);
   }
+/*다혜 만듬*/
+.subject {
+    position: absolute;
+    height: 160.53px;
+    left: 356px;
+    top: 230px;
+    font-family: Noto Sans KR;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 80px;
+    letter-spacing: 0.16em;
+    text-align: center;
+  }
+
+.btn-btn-yellow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 269px;
+    height: 56px;
+    left: calc(50% - 269px/2 - 0.5px);
+    top: calc(50% - 56px/2 + 128px);
+    background: #F2C438;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    text-decoration-line: none;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #010326;
+}
+
+.subject2 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 70px;
+  color: #000000;
+}
+
+.subject3 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.16em;
+  color: #1C1C1C;
+}

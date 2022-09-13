@@ -58,13 +58,13 @@ function Header() {
                         </ul>
                     </li>
                     <li>
-                        <span class="header-icon "><img src='./img/heart_black.png' width='30' /></span>
+                        <span class="header-icon "><img src='./img/heart_black.png' width='22' /></span>
                     </li>
                     <li>
-                        <span class="header-icon"><img src='./img/shopping_black.png' width='30' /></span>
+                        <span class="header-icon"><img src='./img/shopping_black.png' width='22' /></span>
                     </li>
                     <li>
-                        <span class="header-icon"><img src='./img/search_black.png' width='30' /></span>
+                        <span class="header-icon"><img src='./img/search_black.png' width='22' /></span>
                     </li>
                     <li>
                         <span class="header-icon btn btn-black">로그인</span>
