@@ -18,11 +18,13 @@ function ArtistList(){
         getArtists();
     }, []); 
     return (
-    <div>
+    <div
+    style={{display: "flex" , justifycontents: "center", alignItem : "center"}}>
         {loading ? (
         <h1>Loading...</h1>
         ) : (
-            <div>
+            <div
+            style={{width:"1370px", margin:"0 auto"}}>
                 <ArtListFilter />
                 {artists.map((artists) => (
                 <Artists 
