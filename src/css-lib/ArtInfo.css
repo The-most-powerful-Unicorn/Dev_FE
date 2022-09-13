@@ -1,0 +1,46 @@
+.body{
+
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content2"
+    "sidebar content3 content4"
+    "sidebar content5 content6"
+    "sidebar content7 content8"
+    ;
+    width: 80vw;
+    margin: auto;
+}
+.side{
+    grid-area: sidebar;
+}
+
+.item1 {
+    grid-area: content1;
+}
+
+.item2 {
+    grid-area: content2;
+}
+
+.item3 {
+    grid-area: content3;
+}
+
+.item4{
+    grid-area: content4;
+}
+
+.item5{
+    grid-area: content5;
+}
+
+.item6{
+    grid-area: content6;
+
+}
