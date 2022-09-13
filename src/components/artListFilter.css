@@ -1,0 +1,100 @@
+body {
+    margin : 0px;
+    padding: 0px;
+    overflow-x:hidden;
+}
+
+.artListFilter {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 168px;
+    /* margin-left: 251px; */
+    margin-bottom: 128px;
+    width: 1079px;
+    height: 134px;
+    font-family: 'Noto Sans KR';
+}
+
+.artListFilter li a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+.artListFilter-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.artListFilter-1 li:after {
+    content: "|";
+    float: right;
+    display: block;
+    padding-left: 10px;
+}
+
+.artListFilter-1 li:last-child::after{
+    content: "";
+}
+
+.artListFilterNew{
+    font-weight: 700;
+    color: #010326;
+}
+
+.artListFilterGana{
+    color: #474747;
+}
+
+
+/*클릭할때 바뀌는 부분*/
+.artListFilterGanaOn {
+    font-weight: 700;
+    color: #010326;
+}
+.artListFilterNewOff {
+    font-weight: 400;
+    color: #474747;
+}
+
+.artListFilter-choiceOn {
+    font-size: 16px;
+    color: #474747;
+}
+
+
+
+.artListFilter-choice{
+    font-size: 16px;
+    color: #E5E5E5;
+    pointer-events: none;
+}
+
+.artListFilter-choice .artListFilter-han{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding-top: 20px;
+
+}
+
+.artListFilter-choice .artListFilter-eng{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding-top: 5px;
+}
+
+.filterBorder {
+    width: 1350px;
+    margin: 0 auto;
+    border: 0.5px solid #CCCCCC;
+    margin-top: 64px;
+}
+

@@ -34,7 +34,7 @@ function Header() {
                     </li>
                     <li><span class="header-navBtn ">작가</span>
                         <ul class="header-sub-ul">
-                            <li class="header-sub-li"><Link to=''>작가리스트</Link></li>
+                            <li class="header-sub-li"><Link to='/ArtistList'>작가리스트</Link></li>
                             <li class="header-sub-li"><Link to=''>작가공모</Link></li>
                         </ul>
                     </li>

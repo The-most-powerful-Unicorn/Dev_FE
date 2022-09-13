@@ -16,6 +16,10 @@
     width: 80vw;
     margin: auto;
 }
+
+.head{
+    grid-area: header;
+}
 .side{
     grid-area: sidebar;
 }
@@ -43,4 +47,12 @@
 .item6{
     grid-area: content6;
 
+}
+
+.button_interior{
+    width: 50px;
+}
+
+.preView{
+    background-image: url(/public/img/interior01Living.jpg);
 }

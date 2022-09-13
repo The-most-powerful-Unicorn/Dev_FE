@@ -12,6 +12,7 @@ import Home from './routes/Home';
 import Header from "./Header";
 import ArtistPage from'./routes/ArtistPage';
 import ArtworkPage from "./routes/ArtworkPage";
+import ArtistList from './routes/ArtistList';
 
 export default function App() {
   return (
@@ -19,6 +20,9 @@ export default function App() {
     <Router>
       <div>
      <Header />
+     <Routes>
+          <Route path='/ArtistList/' element={<ArtistList />} />
+        </Routes>
         <Routes>
           <Route path='/ArtistPage/:id' element={<ArtistPage />} />
         </Routes>
