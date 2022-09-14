@@ -5,7 +5,7 @@ import {
     Link
 } from "react-router-dom";
 import '../css-lib/ArtInfo.css'
-
+import '../css-lib/nonPageScroll.css'
 
 function ArtworkPage() {
     const { id } = useParams();
