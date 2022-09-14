@@ -8,11 +8,9 @@ import './css-lib/Header.css';
 import React, { useEffect, useState } from "react";
 import './css-lib/button.css';
 
-
-import Header from './Header';
-
 import Home from './routes/Home';
 import Header from "./Header";
+import Footer from './Footer';
 import ArtistPage from'./routes/ArtistPage';
 import ArtworkPage from "./routes/ArtworkPage";
 import ArtistList from './routes/ArtistList';
