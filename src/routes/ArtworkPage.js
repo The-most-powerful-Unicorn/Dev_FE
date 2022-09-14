@@ -57,14 +57,6 @@ function ArtworkPage() {
     // artworkRental.toLocaleString();
 
 
-    const [preImg, setImg] = useState('../img/interior01Living.jpg');
-
-    const imgChange = (bgImg) =>{
-        // bgImg = {bgImg}
-        // setImg();
-    };
-
-
     return (
         <div className="body">
             <br /><br /><br />
@@ -84,21 +76,12 @@ function ArtworkPage() {
             <div className="container">
                 <h2 className="head">인태리어 해보기</h2>
                 <div className="side preView"><img
-                    style={{ 
-                        height: "300px" ,
-                        backgroundImg:"url({bgImg})"
-                    }}
-                    />
-                    <img src={artworks.artworkImgUrl} 
-                    style={{height:'100px'}}/>
+                    style={{ height: "100px" }}
+                    src={artworks.artworkImgUrl} />
+                    
                 </div>
                 <div className="item1">
-                <img className='button_interior'
-                // onclick={imgChange(../img/interior01Living.jpg)}
-                    src='../img/interior01Living.jpg' />
-                    <img className='button_interior'
-                // onclick={document.body.background = '../img/interior02Shop.jpg'}
-                    src='../img/interior02Shop.jpg' />
+                <img className='button_interior' src='../img/interior01Living.jpg' />
 
                 </div>
                 
