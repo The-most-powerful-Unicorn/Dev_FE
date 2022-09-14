@@ -9,7 +9,7 @@ function ArchivingList({id,artworkImg,artworkName,artworkSize,artworkCmSize,artw
                 <img src={artworkImg} alt="artistPic" className={styles.artists_img}/>
                 <div className={styles.info}>
                     <h2 className={styles.artists_name}>
-                        <Link to={`/archiving/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>{artworkName}</Link> 
+                        <Link to={`/ArtistPage/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>{artworkName}</Link> 
                     </h2>
                     <p className={styles.artists_enName}>{artworkSize}</p>
                     {/* <hr className={styles.artists_border}></hr> */}
