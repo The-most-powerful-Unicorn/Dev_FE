@@ -6,10 +6,12 @@ function ArchivingList({id,artworkImg,artworkName,artworkSize,artworkCmSize,artw
     return (
         <container className={styles.containerGrid}>
             <div className={styles.artists}>
+            <Link to={`/ArtistPage/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 <img src={artworkImg} alt="artistPic" className={styles.artists_img}/>
+                </Link> 
                 <div className={styles.info}>
                     <h2 className={styles.artists_name}>
-                        <Link to={`/ArtistPage/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>{artworkName}</Link> 
+                       {artworkName}
                     </h2>
                     <p className={styles.artists_enName}>{artworkSize}</p>
                     {/* <hr className={styles.artists_border}></hr> */}
