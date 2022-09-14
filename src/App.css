@@ -86,7 +86,7 @@
 
 .item {
   flex: 1;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .item1{

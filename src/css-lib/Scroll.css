@@ -19,11 +19,13 @@
 /*다혜 만듬*/
 .subject {
     position: absolute;
+    width: 100%;
+    margin: 0 auto;
     height: 160.53px;
-    left: 356px;
+    /* left: 356px; */
     top: 230px;
     font-family: Noto Sans KR;
-    font-size: 55px;
+    font-size: 53px;
     font-weight: 300;
     line-height: 80px;
     letter-spacing: 0.16em;
@@ -57,9 +59,10 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 70px;
   color: #000000;
+  text-align: center;
 }
 
 .subject3 {
@@ -70,5 +73,19 @@
   line-height: 52px;
   letter-spacing: 0.16em;
   color: #1C1C1C;
+  float: left;
 }
 
+.subject4 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.16em;
+  color: #1C1C1C;
+  text-align: center;
+}
