@@ -30,7 +30,7 @@ function ArtWorks({
             style={{textAlign:"left"}}>
                 <div class="timeline_item">
                     <div class="time_date">
-                        <p class="time">2{exhiDate}</p>
+                        <p class="time">{exhiDate}</p>
                         <p class="flag">{exhiName}</p>
                     </div>
                     <div class="desc">

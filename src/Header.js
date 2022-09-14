@@ -12,24 +12,15 @@ function Header() {
     return (
         <header id="header">
             <nav id="header-wrap" class="cf">
-                <ul id="header-nav">
-                    <li>
-                        <ul>
+                <h1 id="logo">
                             <Link to='/'>
                                 <img
-                                    src="./img/logo-2.png"
-                                    style={{
-                                        top: "",
-                                        left: "",
-                                        width: "25%",
-                                        height: "25%",
-                                    }} />
-                            </Link></ul>
-                    </li>
+                                    src="./img/logo-2.png"/></Link>
+                </h1>
+                <ul id="header-nav">
                     <li><span class="header-navBtn ">About</span>
                         <ul class="header-sub-ul">
-                            <li class="header-sub-li"><Link to=''>회사소개</Link></li>
-                            <li class="header-sub-li"><Link to=''>서비스소개</Link></li>
+                            <li class="header-sub-li"><Link to=''>서비스 소개</Link></li>
                         </ul>
                     </li>
                     <li><span class="header-navBtn ">작가</span>
@@ -57,6 +48,8 @@ function Header() {
                             <li class="header-sub-li"><Link to=''>1:1문의</Link></li>
                         </ul>
                     </li>
+                </ul>
+                <ul id="header-nav2">
                     <li>
                         <span class="header-icon "><img src='./img/heart_black.png' width='22' /></span>
                     </li>
