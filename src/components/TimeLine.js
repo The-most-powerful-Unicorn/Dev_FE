@@ -34,11 +34,11 @@ function ArtWorks({
                         <p class="flag">{exhiName}</p>
                     </div>
                     <div class="desc">
-                        <p>{exhiInfo} </p>
                         <img src={exhiImg}
                         style={{ height: "30vh" }}
-                    />
+                        />
                     </div>
+                    <p  class="exhiInfo">{exhiInfo}</p>
                 </div>
 
                 {/* <div class="timeline_item">

@@ -63,3 +63,13 @@
     font-size: 16px;
     /* margin-top: 22px; */
 }
+
+.artworkInfo {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #616161;
+    margin-top: 3px;
+}
