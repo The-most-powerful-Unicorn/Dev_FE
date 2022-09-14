@@ -1,40 +1,56 @@
-import './App.css';
-import React, { useEffect, useState, useRef } from "react";
-import ReactDOM from "react-dom/client";
-import { Link, animateScroll as Scroll } from "react-scroll";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import './css-lib/Header.css';
+import React, { useEffect, useState } from "react";
 import './css-lib/button.css';
 
+<<<<<<< HEAD
 import SlideView from './SlideView';
 import Header from './Header';
 import Footer from './Footer';
+=======
+import Home from './routes/Home';
+import Header from "./Header";
+import ArtistPage from'./routes/ArtistPage';
+import ArtworkPage from "./routes/ArtworkPage";
+import ArtistList from './routes/ArtistList';
+import ArtWorks from "./routes/ArtWorks";
+>>>>>>> feature_jang
 
-const useScroll = () => {
-  const [state, setState] = useState({
-    x: 0,
-    y: 0
-  });
-  const onScroll = () => {
-    setState({ y: window.scrollY, x: window.scrollX });
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  return state;
-};
-
-function ScrollComponent() {
-  const testRef = useRef(null);
-  const scrollToElement = () => testRef.current.scrollIntoView();
-  // Once the scrollToElement function is run, the scroll will show the element
+export default function App() {
   return (
-    <>
-      <div ref={testRef}>Element you want to view</div>
-      <button onClick={scrollToElement}>Trigger the scroll</button>
-    </>
+
+    <Router>
+      <div>
+     <Header />
+     <Routes>
+          <Route path='/artistList' element={<ArtistList />} />
+        </Routes>
+        <Routes>
+          <Route path='/artWorks' element={<ArtWorks />} />
+        </Routes>
+        <Routes>
+          <Route path='/ArtistPage/:id' element={<ArtistPage />} />
+        </Routes>
+        <Routes>
+          <Route path='/ArtworkPage/:id' element={<ArtworkPage />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
+function About() {
+  return <h2>About</h2>;
+}
 
+<<<<<<< HEAD
 
 
 function App() {
@@ -108,3 +124,8 @@ function App() {
   );
 };
 export default App;
+=======
+function Users() {
+  return <h2>Users</h2>;
+}
+>>>>>>> feature_jang

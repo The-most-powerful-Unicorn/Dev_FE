@@ -4,6 +4,7 @@
 .btn{
     padding-left: 1em;
     padding-right: 1em;
+    text-decoration: none;
 
     border-radius: 100vh;
     
@@ -13,19 +14,21 @@
     font-size: 1rem;
     text-align: center;
     line-height: 2;
+
+    z-index: 10;
 }
 
-.bg-yellow {
-  color: #fff;
+.btn-yellow{
+  color: black;
   background-color: #EBc655;
 }
 
-.bg-black{ 
+.btn-black{ 
   color: #fff;
   background-color: black;
 }
 
-.bg-white{
+.btn-white{
   color: black;
   background-color: white;
 }

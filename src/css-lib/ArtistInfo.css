@@ -1,0 +1,17 @@
+.ArtistInfo{
+    text-align: center;
+    display: table;
+}
+
+.inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.MainName{
+    height:30vh;
+}
+
+.empty{
+    height:10vh;
+}

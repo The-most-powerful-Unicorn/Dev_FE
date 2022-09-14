@@ -1,0 +1,52 @@
+/*갤러리 부분*/
+/* .artistGallary {
+    position: absolute;
+    width: 100%;
+    top: 430px;
+} */
+.containerGrid {
+    /* grid-auto-flow: row dense; */
+    /* grid-auto-rows: repeat(auto-fill, minmax(425px)); */
+    /* grid-template-rows: 425px; */
+    /* column-gap: 70px;*/
+    font-family: 'Noto Sans KR';
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px));
+    padding-right: 3%;
+    vertical-align: top;
+}
+
+.artists {
+    list-style: none;
+    font-family: 'Noto Sans KR';
+    /* min-width: 1350px; */
+    /* height: 425px; */
+    width: 300px;
+}
+
+.artists_img{
+    width: 300px;
+}
+
+.info{
+    width: 300px;
+    padding-bottom: 10%;
+}
+
+.artwork_name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 12px 0px 0px 0px;
+    text-decoration-line: none;
+}
+
+.artists_name {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #616161;
+    margin-top: 3px;
+}
