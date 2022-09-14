@@ -13,6 +13,7 @@ import Header from "./Header";
 import ArtistPage from'./routes/ArtistPage';
 import ArtworkPage from "./routes/ArtworkPage";
 import ArtistList from './routes/ArtistList';
+import ArtWorks from "./routes/ArtWorks";
 
 export default function App() {
   return (
@@ -21,7 +22,10 @@ export default function App() {
       <div>
      <Header />
      <Routes>
-          <Route path='/ArtistList/' element={<ArtistList />} />
+          <Route path='/artistList' element={<ArtistList />} />
+        </Routes>
+        <Routes>
+          <Route path='/artWorks' element={<ArtWorks />} />
         </Routes>
         <Routes>
           <Route path='/ArtistPage/:id' element={<ArtistPage />} />

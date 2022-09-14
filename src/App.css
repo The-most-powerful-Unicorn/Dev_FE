@@ -103,6 +103,11 @@
     align-items: flex-end;
 }
 
+.block2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/img/mainFrame.jpg");
+}
 
 .bg_img{
   z-index: 2;
@@ -122,9 +127,7 @@
   z-index: 5;
 }
 
-div{
-  text-align: center;
-}
+
 
 .slide_view{
   text-align: center;
