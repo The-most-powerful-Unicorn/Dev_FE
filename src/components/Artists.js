@@ -9,7 +9,7 @@ function Artists({id,artistProfileImg,artistName,artistEnName,artistSimpleIntro}
                 <img src={artistProfileImg} alt="artistPic" className={styles.artists_img}/>
                 <div className={styles.info}>
                     <h2 className={styles.artists_name}>
-                        <Link to={`/archiving/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>{artistName}</Link> 
+                        <Link to={`/ArtistPage/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>{artistName}</Link> 
                     </h2>
                     <p className={styles.artists_enName}>{artistEnName}</p>
                     {/* <hr className={styles.artists_border}></hr> */}

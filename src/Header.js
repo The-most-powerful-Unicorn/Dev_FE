@@ -40,7 +40,7 @@ function Header() {
                     </li>
                     <li><span class="header-navBtn ">작품</span>
                         <ul class="header-sub-ul">
-                            <li class="header-sub-li"><Link to=''>작품리스트</Link></li>
+                            <li class="header-sub-li"><Link to='/artWorks'>작품리스트</Link></li>
                             <li class="header-sub-li"><Link to=''>테마별추천</Link></li>
                         </ul>
                     </li>
