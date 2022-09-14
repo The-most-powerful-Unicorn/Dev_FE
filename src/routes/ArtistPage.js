@@ -4,6 +4,8 @@ import React, { useEffect, useState, useRef } from "react";
 import ReactPageScoller from "react-page-scroller";
 import Slider from "react-slick";
 
+import ArtworksList from '../components/ArchivingList';
+
 import { useParams } from 'react-router-dom';
 import '../css-lib/button.css';
 import '../css-lib/Scroll.css';
@@ -35,6 +37,7 @@ function ArtistPage() {
     // artistNum: 2
     // artistProfileImg: "https://s3.ap-northeast-2.amazonaws.com/theo.artwork.sss.bucket/Artist/jubi.png"
     // artistSimpleIntro: "나는 제주도에 사는 주비야!"
+
 
     const [artworks, setArtworks] = useState([]);
     const getArtwokrs = async () => {
@@ -119,6 +122,20 @@ function ArtistPage() {
                 </div>
                 <div className="block">
                     ArtWork
+                    
+                </div>
+                <div>
+                    {artworks.map((artworks) => (
+                    <ArtworksList 
+                        key={artworks.id}
+                        id={artworks.artworkNum}
+                        artworkImg={artworks.artworkImg}
+                        artworkName={artworks.artworkName}
+                        artworkSize={artworks.artworkSize}
+                        artworkCmSize={artworks.artworkCmSize}
+                        artworkDate={artworks.artworkDate}
+                    />
+                    ))}
                 </div>
             </ReactPageScoller>
         </div>
