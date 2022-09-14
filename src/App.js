@@ -10,10 +10,12 @@ import './css-lib/button.css';
 
 import Home from './routes/Home';
 import Header from "./Header";
+import Footer from './Footer';
 import ArtistPage from'./routes/ArtistPage';
 import ArtworkPage from "./routes/ArtworkPage";
 import ArtistList from './routes/ArtistList';
 import ArtWorks from "./routes/ArtWorks";
+
 
 export default function App() {
   return (
@@ -40,10 +42,4 @@ export default function App() {
     </Router>
   );
 }
-function About() {
-  return <h2>About</h2>;
-}
 
-function Users() {
-  return <h2>Users</h2>;
-}

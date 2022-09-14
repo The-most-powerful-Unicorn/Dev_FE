@@ -27,12 +27,41 @@
   background-color: rgba(255, 255, 255, .9);
   overflow: visible;
 }
+#logo {
+  float: left;
+  height: 58px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+}
+#logo img {
+ width: 87px;
+ padding-left: 252px;
+}
 
 #header-nav {
   float: left;
   /* overflow: hidden; */
 }
 
+#header-nav2 {
+  float: right;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  list-style:none;
+  padding-right: 252px;
+}
+
+#header-nav2>li {
+  list-style:none;
+}
+
+#header-nav2>li:last-child {
+padding-left: 15px;
+}
 
 #header-nav>li {
   display: inline-block;
@@ -105,15 +134,15 @@ a,a:hover,a:visited{
 .header-sub-ul {
   position: absolute;
   top: 70px;
-  left: -1px;
   color: #7c7c7d;
   line-height: 1.6;
   font-size: 13px;
   list-style: none;
+  text-align: center;
 }
 
 .header-sub-ul:last-child {
-  left: -40px;
+  left: -45px;
   width: 100px;
 }
 

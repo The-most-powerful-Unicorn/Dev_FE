@@ -10,6 +10,8 @@ import SlideView from '../components/SlideView';
 import SlideViewAuto from '../components/SlideViewAuto';
 import SlideViewArtist from'../components/SlideViewArtist';
 
+import Footer from '../Footer';
+
 
 const useScroll = () => {
   const [state, setState] = useState({
@@ -82,7 +84,7 @@ function Home() {
           </h1>
           <div class="bgDU"
                             style={{
-                              width: "30vw"
+                              width: "25vw"
                             }} >
             <span class="mask"
             >
@@ -90,7 +92,7 @@ function Home() {
                 <img
                   src="/img/Gogh-Starry-Night.jpg"
                   style={{
-                    width: "30vw"
+                    width: "25vw"
                   }} />
                   <span class="cap">text</span>
               </a>
@@ -115,16 +117,16 @@ function Home() {
         </div>
         <div className="block bg_white">
           <div class="space_empty"></div>
-          <div class="container ">
 
-            <h1 class="item">지금 주목 해야할 작가</h1>
-          </div>
+            <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
+
           <div class="">
             <div class="item slide_view">
               <SlideViewArtist />
             </div>
           </div>
         </div>
+        <Footer />
       </ReactPageScoller>
     </div>
 

@@ -1,6 +1,8 @@
 import ArtWorksList from "../components/ArtWorksList.js"
 import {useState, useEffect} from "react";
 
+import styles from "./artworks.css";
+
 function ArtWorks(){
     const [loading, setLoading] = useState(true);
     const [artWorks, setArtWorks] = useState([]);
