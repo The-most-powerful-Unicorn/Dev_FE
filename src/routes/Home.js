@@ -10,6 +10,8 @@ import SlideView from '../components/SlideView';
 import SlideViewAuto from '../components/SlideViewAuto';
 import SlideViewArtist from'../components/SlideViewArtist';
 
+import Footer from '../Footer';
+
 
 const useScroll = () => {
   const [state, setState] = useState({
@@ -124,6 +126,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <Footer />
       </ReactPageScoller>
     </div>
 
