@@ -75,7 +75,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="block">
+        <div className="block2">
           <div class="space_empty"></div>
           <h1 className='subject2'>
             집에서 <b>예술</b>을 즐기는 가장 <b>쉬운</b> 방법
