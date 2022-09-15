@@ -85,7 +85,6 @@ function ArtListFilter() {
                     <li><a href="">Z</a></li>
                 </ul>
             </div>
-            <hr className="filterBorder" />
     </div>
     );
 }
