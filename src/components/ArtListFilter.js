@@ -1,14 +1,43 @@
 import './artListFilter.css';
-import React from 'react'
+import React,{useState} from 'react';
+
 
 function ArtListFilter() {
+    const [styleGana, setStyleGana] = useState("artListFilterNew");
+    const [styleNew, setStyleNew] = useState("artListFilterGana");
+    const [styleChoice, setStyleChoice] =useState("artListFilter-choice");
+
+
+
+    const changeGana = () => {
+        if (styleGana === 'artListFilterGana') {
+            setStyleGana("artListFilterNew");
+            setStyleNew("artListFilterGana");
+        };
+    };
+
+    const changeNew = () => {
+        if (styleNew === 'artListFilterGana') {
+            setStyleNew("artListFilterNew");
+            setStyleGana("artListFilterGana");
+        };
+    };
+    const changeChoice = () => {
+        if (styleChoice === 'artListFilter-choice') {
+            setStyleChoice("artListFilter-choiceOn");
+        }else{
+            setStyleChoice("artListFilter-choice");
+        }
+    };
+
+
     return (
         <div className="artListFilter">
             <ul className="artListFilter-1">
-                <li id='ALF' className="artListFilterNew"><a href="">최신등록순</a></li>
-                <li id='ALF2' className="artListFilterGana"><a href="">가나다순</a></li>
+                <li id='ALF' className={styleGana} onClick={()=>{changeGana();changeNew();changeChoice();}}>최신등록순</li>
+                <li id='ALF2' className={styleNew} onClick={()=>{changeGana();changeNew();changeChoice();}}>가나다순</li>
             </ul>
-            <div className="artListFilter-choice">
+            <div className={styleChoice}>
                 <ul className="artListFilter-han">
                     <li><a href="">ㄱ</a></li>
                     <li><a href="">ㄴ</a></li>

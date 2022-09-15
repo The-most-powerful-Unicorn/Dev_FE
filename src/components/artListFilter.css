@@ -59,12 +59,10 @@ body {
     color: #474747;
 }
 
-.artListFilter-choiceOn {
+.artListFilter-choiceOn{
     font-size: 16px;
     color: #474747;
 }
-
-
 
 .artListFilter-choice{
     font-size: 16px;
@@ -72,7 +70,7 @@ body {
     pointer-events: none;
 }
 
-.artListFilter-choice .artListFilter-han{
+.artListFilter-han{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,7 +80,7 @@ body {
 
 }
 
-.artListFilter-choice .artListFilter-eng{
+.artListFilter-eng{
     display: flex;
     flex-direction: row;
     align-items: center;

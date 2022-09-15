@@ -126,7 +126,8 @@ input[type="radio"]:checked + label {
     background: #666666;
     color: #F2F2F2;
     border:0;
-    outline: 0;
+    outline: 0;    
+    line-height: 45px;
 }
 .label{
     text-align: center;
@@ -141,6 +142,8 @@ input[type="radio"]:checked + label {
     color: #000000;
     border:0;
     outline: 0;
+    line-height: 45px;
+    
 }
 .label:hover {
     background-color: #E2EDF9; /* マウスオーバー時の背景色を指定する */ 
@@ -401,4 +404,8 @@ input[type="radio"]:checked + label {
 }
 .money_hidden{
     display: none;
+}
+
+.non-style{
+    text-decoration: none;
 }
