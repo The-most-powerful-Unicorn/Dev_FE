@@ -121,7 +121,8 @@ function ArtworkPage() {
                 <div className="containerInfo">
                     <div className="containerInfo-subject">
                         <h1 className="containerInfo-subject1">{artworks.artworkName}</h1>
-                        <Link to={`/ArtistPage/${artworks.artistNum}`}><h2 className="containerInfo-subject2">{artworks.artistName}</h2></Link >
+                        <Link to={`/ArtistPage/${artworks.artistNum}`}><h2 className="containerInfo-subject2">
+                        {artworks.artistName}</h2></Link >
                     </div>
                     <div className="artworkInfo">
                         <div className="artworkInfo1">
