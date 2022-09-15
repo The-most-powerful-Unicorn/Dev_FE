@@ -53,8 +53,8 @@ function SlideView(){
                 <Link to={`/ArtworkPage/${artworks.artworkNum}`}>
                 <img src={artworks.artworkImg} />
                 </Link>
-                <p>{artworks.artworkName}</p>
-                <p>{artworks.artistName}</p>
+                <p className="artworkNameScroll">{artworks.artworkName}</p>
+                <p className="artistNameScroll">{artworks.artistName}</p>
               </div>
             )
           })}

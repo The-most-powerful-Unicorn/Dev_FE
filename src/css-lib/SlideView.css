@@ -47,3 +47,27 @@
 
   }
 
+/* 다혜 수정 */
+.artworkNameScroll {
+  margin-top: -20px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.16em;
+  color: #000000;
+}
+
+.artistNameScroll{
+  margin-top: -13px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.16em;
+  color: #000000;
+}
