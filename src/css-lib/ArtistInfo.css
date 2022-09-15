@@ -15,3 +15,13 @@
 .empty{
     height:10vh;
 }
+
+.preView{
+    background-repeat:no-repeat;
+}
+
+.button_wrap img{
+    width:50px;
+
+}
+
