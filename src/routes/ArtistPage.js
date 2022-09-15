@@ -199,7 +199,7 @@ function ArtistPage() {
                 <div style={{display: "flex" , justifycontents: "center", alignItem : "center", marginTop: "150px"}}>
                     <div style={{width:"1370px", margin:"0 auto"}}>
                         {artworks.map((artworks) => (
-                            <ArtworksList
+                            <ArchivingList
                                 key={artworks.id}
                                 id={artworks.artworkNum}
                                 artworkImg={artworks.artworkImg}
