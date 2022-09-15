@@ -264,6 +264,9 @@ input[type="radio"]:checked + label {
     outline: 0;
 }
 
+.money_hidden{
+    display: none;
+}
 .subjectItr {
     display: block;
     font-weight: 700;

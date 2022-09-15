@@ -17,7 +17,7 @@ function ArtworkPage() {
     const getArtwokrs = async () => {
         const json = await (
             await fetch(
-                `https://api.jaehyunking.com/artwork?num=${id}`
+                `//15.164.134.237:8080/artwork?num=${id}`
             )
         ).json();
         setArtworks(json);
@@ -35,7 +35,7 @@ function ArtworkPage() {
     // const getartLists = async () => {
     //     const json = await (
     //         await fetch(
-    //             `https://api.jaehyunking.com/artwork/artist?artistNum=${artistNum}`
+    //             `//15.164.134.237:8080/artwork/artist?artistNum=${artistNum}`
     //         )
     //     ).json();
     //     setartLists(json);
@@ -87,23 +87,25 @@ function ArtworkPage() {
         gap: 10,
     };
 
-    // function formSwitch() {
-    //     let hoge = document.getElementsByName('maker')
-    //     if (hoge[0].checked) {
-    //         // 好きな食べ物が選択されたら下記を実行します
-    //         document.getElementById('money_Buy').style.display = "";
-    //         document.getElementById('money_Rental').style.display = "none";
-    //     } else if (hoge[1].checked) {
-    //         // 好きな場所が選択されたら下記を実行します
-    //         document.getElementById('money_Buy').style.display = "none";
-    //         document.getElementById('money_Rental').style.display = "";
-    //     } else {
-    //         document.getElementById('money_Buy').style.display = "none";
-    //         document.getElementById('money_Rental').style.display = "none";
-    //     }
-    // }
-    // window.addEventListener('load', formSwitch());
+    const [styleBuy, setStyleBuy] = useState("money_hidden");
+    const [styleRental, setStyleRental] = useState("moneyActive");
 
+
+    const changeBuy = () => {
+        if(styleBuy==='moneyActive'){
+            setStyleBuy("money_hidden");
+        }else{
+            setStyleBuy("moneyActive");
+        }
+    };
+
+    const changeRental = () => {
+        if(styleRental==='moneyActive'){
+            setStyleRental("money_hidden");
+        }else{
+            setStyleRental("moneyActive");
+        };
+    };
 
     return (
         <div className="body">
@@ -137,13 +139,13 @@ function ArtworkPage() {
                             <div className="button1">
                                 {/* <button className="buttonRental" type="button">렌탈하기</button>
                                 <button className="buttonBuy">구매하기</button> */}
-                                <input type="radio" name="maker" value="1" id="apple" onClick="formSwitch()"/>
+                                <input type="radio" name="maker" value="1" id="apple" onClick={()=>{changeBuy();changeRental();}}/>
                                 <label for="apple" className="label">렌탈하기</label>
 
-                                <input type="radio" name="maker" value="2" id="pineapple" onclick="formSwitch()"/>
+                                <input type="radio" name="maker" value="2" id="pineapple" onClick={()=>{changeBuy();changeRental();}}/>
                                 <label for="pineapple" className="label">구매하기</label>
                             </div>
-                            <div className="money_Reantal">
+                            <div className={styleRental}>
                                 <div className="money1">
                                     <p className="money1-1">렌탈가</p>
                                     <p className="money1-2">월 {artworkRental.toLocaleString()}원</p>
@@ -162,7 +164,7 @@ function ArtworkPage() {
                                     <p className="money3-2">월 {artworkRental.toLocaleString()}원</p>
                                 </div>
                             </div>
-                            <div className="money_Buy">
+                            <div className={styleBuy}>
                                 <div className="money1">
                                     <p className="money1-3">렌탈가</p>
                                     <p className="money1-4">월 {artworkRental.toLocaleString()}원</p>
