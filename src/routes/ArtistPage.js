@@ -13,6 +13,7 @@ import '../css-lib/SlideViewAuto.css';
 import '../App.css';
 import '../css-lib/TimeLine.css';
 import '../css-lib/ArtistInfo.css';
+import '../css-lib/ArtistPage.css';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -122,8 +123,8 @@ function ArtistPage() {
                     <div className="Slide_Con">
                         <div>
                             <div className="MainName">
-                                    <h2>{artists.artistName}</h2>
-                                    <h2>{artists.artistEnName}</h2>
+                                    <h2 className="artistName">{artists.artistName}</h2>
+                                    <h2 className="artistEnName">{artists.artistEnName}</h2>
                             </div>
                             <div>
                                 <Slider {...settings}
@@ -149,21 +150,36 @@ function ArtistPage() {
                     }}
                 >
                     <div className="over_white inner">
-                        <h2>{artists.artistName}</h2>
-                        <h2>{artists.artistEnName}</h2>
+                        <h2 className="artistName2">{artists.artistName}</h2>
+                        <h2 className="artistEnName2">{artists.artistEnName}</h2>
                         <br/>
                         <div style={{
                             margine:""
                         }}>
-                        <h2>{artists.artistIntro}</h2>
+                        <h2 style={{
+                            height: "100px",
+                            fontFamily: "Noto Sans KR",
+                            fontWeight: "400",
+                            fontSize: "22px",
+                            lineHeight: "40px",
+                            textAlign: "center",
+                            letterSpacing: "0.1em",
+                            color: "000000",
+                            width: "700px",
+                            margin: "0 auto",
+                            paddingTop: "20px"
+                        }}>{artists.artistIntro}</h2>
                         </div>
-                        <a href=''><img src='../img/heartRound.png'/></a>
-                        <a href=''><img src='../img/share.png'/></a>
-                        <a href=''><img src='../img/email.png'/></a>
-                        <a href=''><img src='../img/insta.png'/></a>
+                        <ul className="artistIcon">
+                            <li><a href=''><img src='../img/heartRound.png' style={{width:"50px"}}/></a></li>
+                            <li><a href=''><img src='../img/share.png' style={{width:"50px"}}/></a></li>
+                            <li><a href=''><img src='../img/email.png' style={{width:"50px"}}/></a></li>
+                            <li><a href=''><img src='../img/insta.png' style={{width:"50px"}}/></a></li>
+                        </ul>
                     </div>
                 </div>
                 <div className="">
+                <h2 className="history">HISTORY</h2>
                 <div class="cp_timeline04">
                 {exhi.map((exhi) => (
                         <TimeLine 
@@ -178,22 +194,23 @@ function ArtistPage() {
                     ))}
                     </div>
                 </div>
-                <div className="">
-                    ArtWork
 
-                </div>
-                <div style={{textAlign:"center"}}>
-                    {artworks.map((artworks) => (
-                        <ArchivingList
-                            key={artworks.id}
-                            id={artworks.artworkNum}
-                            artworkImg={artworks.artworkImg}
-                            artworkName={artworks.artworkName}
-                            artworkSize={artworks.artworkSize}
-                            artworkCmSize={artworks.artworkCmSize}
-                            artworkDate={artworks.artworkDate}
-                        />
-                    ))}
+                <h2 className="history">ARTWORKS</h2>
+                <div style={{display: "flex" , justifycontents: "center", alignItem : "center", marginTop: "150px"}}>
+                    <div style={{width:"1370px", margin:"0 auto"}}>
+                        {artworks.map((artworks) => (
+                            <ArtworksList
+                                key={artworks.id}
+                                id={artworks.artworkNum}
+                                artworkImg={artworks.artworkImg}
+                                artworkName={artworks.artworkName}
+                                artworkSize={artworks.artworkSize}
+                                artworkCmSize={artworks.artworkCmSize}
+                                artworkDate={artworks.artworkDate}
+                            />
+                        ))}
+                    </div>
+
                 </div>
         </div>
     )
