@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import Slider from "react-slick";
-import '../css-lib/SlideView.css';
+import '../css-lib/SlideViewAuto.css';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -38,7 +38,6 @@ function SlideViewAuto(){
   }
     return (
       <div className="Slide_Con">
-        <p>simple slider</p>
         <div>
         <Slider {...settings}
         >

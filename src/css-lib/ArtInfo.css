@@ -54,5 +54,11 @@
 }
 
 .preView{
-    background-image: url(/public/img/interior01Living.jpg);
+    background-repeat:no-repeat;
 }
+
+/* .button_wrap{
+    display:grid;
+    grid-template-columns:50px,50px, 50px;
+    grid-template-rows:50px, 50px, 50px;
+} */

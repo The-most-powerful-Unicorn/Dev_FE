@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import Slider from "react-slick";
-import '../css-lib/SlideView.css';
+
 
 import {
   BrowserRouter as Router,
@@ -9,6 +9,7 @@ import {
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import '../css-lib/SlideView.css';
 
 function SlideView(){
   const [artworks, setArtworks]= useState([]);
@@ -27,22 +28,21 @@ function SlideView(){
   console.log(artworks);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
     width:100,
+    variablewWidth:true,
+    gap:10,
   };
-
-
   const state={
     display: true,
     width: 100,
   }
     return (
       <div className="Slide_Con">
-        <p>simple slider</p>
         <div>
         <Slider {...settings}
         >
@@ -54,6 +54,7 @@ function SlideView(){
                 <img src={artworks.artworkImg} />
                 </Link>
                 <p>{artworks.artworkName}</p>
+                <p>{artworks.artistName}</p>
               </div>
             )
           })}

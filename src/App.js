@@ -2,19 +2,22 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import './css-lib/Header.css';
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './css-lib/button.css';
 
 import Home from './routes/Home';
 import Header from "./Header";
-import Footer from './Footer';
+
 import ArtistPage from'./routes/ArtistPage';
 import ArtworkPage from "./routes/ArtworkPage";
 import ArtistList from './routes/ArtistList';
 import ArtWorks from "./routes/ArtWorks";
+
+// import About from "./routes/About";
+// import Exhibition from "./routes/Exhibition";
+// import Customer from "./routes/Customer";
 
 
 export default function App() {
@@ -35,6 +38,15 @@ export default function App() {
         <Routes>
           <Route path='/ArtworkPage/:id' element={<ArtworkPage />} />
         </Routes>
+        {/* <Routes>
+          <Route path='/About' element={<About />} />
+        </Routes> */}
+        {/* <Routes>
+          <Route path='/Customer' element={<Customer />} />
+        </Routes>
+        <Routes>
+          <Route path='/Exhibition' element={<Exhibition />} />
+        </Routes> */}
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>

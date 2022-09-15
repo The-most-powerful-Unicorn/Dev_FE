@@ -43,7 +43,6 @@ function SlideView(){
   }
     return (
       <div className="Slide_Con">
-        <p>simple slider</p>
         <div>
         <Slider {...settings}
         >

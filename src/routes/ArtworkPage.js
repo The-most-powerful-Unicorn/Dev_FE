@@ -56,6 +56,15 @@ function ArtworkPage() {
     // artworkSell.toLocaleString();
     // artworkRental.toLocaleString();
 
+    const bgImgURL =
+      "../img/interior01Living.jpg";
+
+    const [preImg, setPreImg] = useState(bgImgURL);
+
+    const imgChange = (bgImg) => {
+        setPreImg(bgImg);
+        console.log(bgImg);
+    };
 
     return (
         <div className="body">
@@ -75,16 +84,81 @@ function ArtworkPage() {
             </div>
             <div className="container">
                 <h2 className="head">인태리어 해보기</h2>
-                <div className="side preView"><img
-                    style={{ height: "100px" }}
-                    src={artworks.artworkImgUrl} />
+                <div className="side preView"
+                    style={{ height: "100vh",
+                    width:"50vw",
+                    backgroundImage:`url(${preImg})` }}>
+                    <img
+                    style ={{height:"30vh",
+                }} 
+                    src={artworks.artworkImgUrl}  />
+                </div>
+                <div className="button_wrap">
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior01Living.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior01Living.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior02Shop.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior02Shop.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior03Room.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior03Room.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior04Desk.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior04Desk.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior05Bed.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior05Bed.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior06Bed2.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior06Bed2.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior07Dining.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior07Dining.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior08Office.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior08Office.jpg' />
+                        </button>
+                    </div>
+                    <div className="" >
+                        <button onClick = { ()=> imgChange('../img/interior09Black.jpg')}>
+                            <img 
+                            className='button_interior' 
+                            src='../img/interior09Black.jpg' />
+                        </button>
+                    </div>
                     
                 </div>
-                <div className="item1">
-                <img className='button_interior' src='../img/interior01Living.jpg' />
-
-                </div>
-                
             </div>
 
             <div className="">{artworks.artworkInfo}</div>

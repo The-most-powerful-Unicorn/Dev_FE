@@ -3,13 +3,13 @@ import React from 'react'
 
 function ArtListFilter() {
     return (
-        <div class="artListFilter">
-            <ul class="artListFilter-1">
-                <li id='ALF' class="artListFilterNew"><a href="">최신등록순</a></li>
-                <li id='ALF2' class="artListFilterGana"><a href="">가나다순</a></li>
+        <div className="artListFilter">
+            <ul className="artListFilter-1">
+                <li id='ALF' className="artListFilterNew"><a href="">최신등록순</a></li>
+                <li id='ALF2' className="artListFilterGana"><a href="">가나다순</a></li>
             </ul>
-            <div class="artListFilter-choice">
-                <ul class="artListFilter-han">
+            <div className="artListFilter-choice">
+                <ul className="artListFilter-han">
                     <li><a href="">ㄱ</a></li>
                     <li><a href="">ㄴ</a></li>
                     <li><a href="">ㄷ</a></li>
@@ -27,7 +27,7 @@ function ArtListFilter() {
                     <li><a href="">ㅅ</a></li>
                     <li><a href="">ㅇ</a></li>
                 </ul>
-                <ul class="artListFilter-eng">
+                <ul className="artListFilter-eng">
                     <li><a href="">A</a></li>
                     <li><a href="">B</a></li>
                     <li><a href="">C</a></li>
@@ -56,7 +56,7 @@ function ArtListFilter() {
                     <li><a href="">Z</a></li>
                 </ul>
             </div>
-            <hr class="filterBorder" />
+            <hr className="filterBorder" />
     </div>
     );
 }

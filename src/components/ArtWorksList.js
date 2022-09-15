@@ -6,14 +6,17 @@ function ArtWorks({id,artworkImg,artistName,artworkName}) {
     return (
             <div className={styles.containerGrid}>
                 <div className={styles.artists}>
+                <Link to={`/ArtworkPage/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
                     <img src={artworkImg} alt="artPic" className={styles.artists_img}/>
                     <div className={styles.info}>
                         <h2 className={styles.artwork_name}>{artworkName}
                         </h2>
                         <h3 className={styles.artists_name}>
-                            <Link to={`/archiving/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>{artistName}</Link> 
+                            {artistName}
                         </h3>
+                      
                     </div>
+                    </Link> 
                 </div>
             </div>
     );
