@@ -16,7 +16,7 @@ function SlideView(){
   const getArtwokrs = async () =>{
     const json =await (
       await fetch(
-        '//15.164.134.237:8080/artwork/list'
+        'https://api.jaehyunking.com/artwork/list'
       )
     ).json();
     setArtworks(json);

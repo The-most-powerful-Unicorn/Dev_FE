@@ -28,7 +28,7 @@ function ArtistPage() {
     const getArtists = async () => {
         const json = await (
             await fetch(
-                `http://15.164.134.237:8080/artist?number=${id}`
+                `http:https://api.jaehyunking.com/artist?number=${id}`
             )
         ).json();
         setArtists(json);
@@ -49,7 +49,7 @@ function ArtistPage() {
     const getArtworks = async () => {
         const json = await (
             await fetch(
-                `//15.164.134.237:8080/artwork/artist?artistNum=${id}`
+                `https://api.jaehyunking.com/artwork/artist?artistNum=${id}`
             )
         ).json();
         setArtworks(json);
@@ -67,7 +67,7 @@ function ArtistPage() {
     const getExhi = async () => {
         const json = await (
             await fetch(
-                `http://15.164.134.237:8080/exhibition/list?artistNum=${id}`
+                `http:https://api.jaehyunking.com/exhibition/list?artistNum=${id}`
             )
         ).json();
         setExhi(json);

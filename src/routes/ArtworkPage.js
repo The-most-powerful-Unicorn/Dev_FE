@@ -82,10 +82,28 @@ function ArtworkPage() {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
-        width:100,
-        variablewWidth:true,
-        gap:10,
-      };
+        width: 100,
+        variablewWidth: true,
+        gap: 10,
+    };
+
+    // function formSwitch() {
+    //     let hoge = document.getElementsByName('maker')
+    //     if (hoge[0].checked) {
+    //         // 好きな食べ物が選択されたら下記を実行します
+    //         document.getElementById('money_Buy').style.display = "";
+    //         document.getElementById('money_Rental').style.display = "none";
+    //     } else if (hoge[1].checked) {
+    //         // 好きな場所が選択されたら下記を実行します
+    //         document.getElementById('money_Buy').style.display = "none";
+    //         document.getElementById('money_Rental').style.display = "";
+    //     } else {
+    //         document.getElementById('money_Buy').style.display = "none";
+    //         document.getElementById('money_Rental').style.display = "none";
+    //     }
+    // }
+    // window.addEventListener('load', formSwitch());
+
 
     return (
         <div className="body">
@@ -117,25 +135,51 @@ function ArtworkPage() {
                         </div>
                         <div>
                             <div className="button1">
-                                <button className="buttonRental" type="button">렌탈하기</button>
-                                <button className="buttonBuy">구매하기</button>
+                                {/* <button className="buttonRental" type="button">렌탈하기</button>
+                                <button className="buttonBuy">구매하기</button> */}
+                                <input type="radio" name="maker" value="1" id="apple" onClick="formSwitch()"/>
+                                <label for="apple" className="label">렌탈하기</label>
+
+                                <input type="radio" name="maker" value="2" id="pineapple" onclick="formSwitch()"/>
+                                <label for="pineapple" className="label">구매하기</label>
                             </div>
-                            <div className="money1">
-                                <p className="money1-1">렌탈가</p>
-                                <p className="money1-2">월 {artworkRental.toLocaleString()}원</p>
-                                <p className="money1-3">구매가</p>
-                                <p className="money1-4">{artworkSell.toLocaleString()}원</p>
+                            <div className="money_Reantal">
+                                <div className="money1">
+                                    <p className="money1-1">렌탈가</p>
+                                    <p className="money1-2">월 {artworkRental.toLocaleString()}원</p>
+                                    <p className="money1-3">구매가</p>
+                                    <p className="money1-4">{artworkSell.toLocaleString()}원</p>
+                                </div>
+                                <div className="money2">
+                                    <p className="money2-1">렌탈기간</p>
+                                    <p className="money2-2">3개월</p>
+                                    <p className="money2-3">&nbsp;</p>
+                                    <p className="money2-4">&nbsp;</p>
+                                </div>
+                                <hr></hr>
+                                <div className="money3">
+                                    <p className="money3-1">최종렌탈가</p>
+                                    <p className="money3-2">월 {artworkRental.toLocaleString()}원</p>
+                                </div>
                             </div>
-                            <div className="money2">
-                                <p className="money2-1">렌탈기간</p>
-                                <p className="money2-2">3개월</p>
-                                <p className="money2-3">&nbsp;</p>
-                                <p className="money2-4">&nbsp;</p>
-                            </div>
-                            <hr></hr>
-                            <div className="money3">
-                                <p className="money3-1">최종렌탈가</p>
-                                <p className="money3-2">월 {artworkRental.toLocaleString()}원</p>
+                            <div className="money_Buy">
+                                <div className="money1">
+                                    <p className="money1-3">렌탈가</p>
+                                    <p className="money1-4">월 {artworkRental.toLocaleString()}원</p>
+                                    <p className="money1-1">구매가</p>
+                                    <p className="money1-2">{artworkSell.toLocaleString()}원</p>
+                                </div>
+                                <div className="money2">
+                                    <p className="money1-3">렌탈기간</p>
+                                    <p className="money1-4">3개월</p>
+                                    <p className="money1-3">&nbsp;</p>
+                                    <p className="money1-4">&nbsp;</p>
+                                </div>
+                                <hr></hr>
+                                <div className="money3">
+                                    <p className="money3-1">최종판매가</p>
+                                    <p className="money3-2">{artworkSell.toLocaleString()}원</p>
+                                </div>
                             </div>
                             <div className="button2">
                                 <button className="buttonSave" type="button">장바구니</button>
@@ -227,7 +271,7 @@ function ArtworkPage() {
             </div>
             <div className="">{artworks.artworkInfo}</div>
             <div>
-            {/* <Slider {...settings}
+                {/* <Slider {...settings}
                                 >
                                     {artLists && artLists.map(artLists => {
                                         return (

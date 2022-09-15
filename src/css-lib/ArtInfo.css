@@ -104,7 +104,40 @@
     border:0;
     outline: 0;
 }
-
+input[type=radio] {
+    display: none; /* ラジオボタンを非表示にする */
+}
+input[type="radio"]:checked + label {
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #666666;
+    color: #F2F2F2;
+    border:0;
+    outline: 0;
+}
+.label{
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #E5E5E5;
+    color: #000000;
+    border:0;
+    outline: 0;
+}
+.label:hover {
+    background-color: #E2EDF9; /* マウスオーバー時の背景色を指定する */ 
+    }
 .money1 {
     display: flex;
     font-style: normal;
@@ -144,7 +177,6 @@
 .money2-1 {
     color: #666666;
     width: 25%;
-
 }
 
 .money2-2 {
