@@ -20,7 +20,7 @@ function Header() {
                 <ul id="header-nav">
                     <li><span className="header-navBtn ">About</span>
                         <ul className="header-sub-ul">
-                            <li className="header-sub-li">서비스 소개</li>
+                            <li className="header-sub-li"><Link to='/'>서비스 소개</Link></li>
                         </ul>
                     </li>
                     <li><span className="header-navBtn ">작가</span>
