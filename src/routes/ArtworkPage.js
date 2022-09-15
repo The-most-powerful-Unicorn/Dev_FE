@@ -211,7 +211,11 @@ function ArtworkPage() {
                 <h2 className="subjectItr">작가 노트</h2>
 
             
-            <div className="artworkInfo">{artworks.artworkInfo}</div>
+            <div className="artworkNote">
+                <div className="artworkNoteText">
+                    "{artworks.artworkInfo}"
+                </div>
+            </div>
         </div>
     );
 }
