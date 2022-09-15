@@ -113,7 +113,6 @@ function ArtworkPage() {
                         </div>
                     </div>
                 </div>
-
             </div>
             <div className="">{artworks.artworkInfo}</div>
 
