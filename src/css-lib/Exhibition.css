@@ -1,0 +1,13 @@
+.imgExhi{
+    height: 1000px;
+    width: 100vw;
+    background-image: url("../background/exhibition.png");
+    min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.empty{
+    height: 70px;
+}

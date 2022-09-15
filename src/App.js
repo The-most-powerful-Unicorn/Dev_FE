@@ -15,9 +15,9 @@ import ArtworkPage from "./routes/ArtworkPage";
 import ArtistList from './routes/ArtistList';
 import ArtWorks from "./routes/ArtWorks";
 
-// import About from "./routes/About";
-// import Exhibition from "./routes/Exhibition";
-// import Customer from "./routes/Customer";
+import About from "./routes/About";
+import Exhibition from "./routes/Exhibition";
+import Customer from "./routes/Customer";
 
 
 export default function App() {
@@ -38,15 +38,15 @@ export default function App() {
         <Routes>
           <Route path='/ArtworkPage/:id' element={<ArtworkPage />} />
         </Routes>
-        {/* <Routes>
+        <Routes>
           <Route path='/About' element={<About />} />
-        </Routes> */}
-        {/* <Routes>
+        </Routes>
+        <Routes>
           <Route path='/Customer' element={<Customer />} />
         </Routes>
         <Routes>
           <Route path='/Exhibition' element={<Exhibition />} />
-        </Routes> */}
+        </Routes>
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
