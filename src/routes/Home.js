@@ -104,7 +104,7 @@ function Home() {
           <div className="space_empty"></div>
           <div className="containerContainer2">
             <h1 className='subject3'>
-              뜨거운 여름,<br />보기만 해도 시원한 그림
+              제주 신예 작가들의<br />개성 넘치는 그림
             </h1>
             {/* <p className="subject3-2">
               #여름, #바다, #블루
