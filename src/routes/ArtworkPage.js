@@ -191,15 +191,11 @@ function ArtworkPage() {
                                     src='../img/interior09Black.jpg' />
                             </button>
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
             <div className="">{artworks.artworkInfo}</div>
         </div>
-
     );
 }
 
