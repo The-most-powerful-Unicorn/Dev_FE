@@ -108,9 +108,9 @@ function Home() {
             <h1 className='subject3'>
               뜨거운 여름,<br />보기만 해도 시원한 그림
             </h1>
-            <p className="subject3-2">
+            {/* <p className="subject3-2">
               #여름, #바다, #블루
-            </p>
+            </p> */}
           </div>
           <div className="item3 slide_view2">
             <SlideView
@@ -120,13 +120,23 @@ function Home() {
         </div>
         <div className="block bg_white">
           <div className="space_empty"></div>
-
             <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
-
-          <div className="">
-            <div className="item slide_view">
-              <SlideViewArtist />
+            <div>
+              <div>
+                <img className='mainArtistImg1' src='/public/img/mainArtist1.jpeg'></img>
+              </div>
+              <div>
+                <img src='' className='mainArtistImg2'></img>
+              </div>
+              <div>
+                <img src='' className='mainArtistImg3'></img>
+              </div>
             </div>
+            
+          <div className="">
+            {/* <div className="item slide_view">
+              <SlideViewArtist />
+            </div> */}
           </div>
         </div>
         <Footer />
