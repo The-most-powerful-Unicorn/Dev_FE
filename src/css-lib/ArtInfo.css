@@ -1,9 +1,228 @@
-.body{
+.body {
+    width: 1100px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR';
+}
+.containerAll {
+    display: flex;
+    margin-top: 138px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.containerImg {
+    width: 54%;
+    margin: 0 auto;
+}
+
+.copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #474747;
+}
+
+.containerInfo {
+    width: 46%;
+}
+
+.containerInfo-subject1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+    margin: 0px;
+}
+
+.containerInfo-subject2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #616161;
+    margin-top: 7px;
+}
+
+.artworkInfo1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
+.artworkInfo1Left {
+    margin-top: 0px;
+    color: #666666;
+    width: 86px;
+}
+
+.artworkInfo1Middle {
+    color:#000000;
+}
+
+.artworkInfo1Right {
+    width: 90px;
+    margin: auto 0 0 auto;
+}
+
+.button1 {
+    display: flex;
+    margin-top: 28px;
+    border-bottom: solid 2px #010326;
+}
+
+.buttonRental{
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #666666;
+    color: #F2F2F2;
+    border:0;
+    outline: 0;
+}
+
+.buttonBuy{
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #E5E5E5;
+    color: #000000;
+    border:0;
+    outline: 0;
+}
+
+.money1 {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 18px;
+}
+.money1-1 {
+    width: 25%;
+    color: #666666;
+}
+.money1-2 {
+    width: 25%;
+    text-align: right;
+    color: #000000;
+}
+.money1-3 {
+    width: 25%;
+    padding-left: 20px;
+    color: #CCCCCC;
+}
+.money1-4 {
+    width: 25%;
+    text-align: right;
+    color: #CCCCCC;
+}
+
+.money2 {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.money2-1 {
+    color: #666666;
+    width: 25%;
 
 }
 
+.money2-2 {
+    width: 25%;
+    text-align: right;
+    color: #000000;
+}
 
-.container {
+.money2-3 {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.money2-4 {
+    width: 25%;
+}
+
+.money3 {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 22px;
+}
+
+.money3-1 {
+    width: 50%;
+    font-size: 18px;
+    color: #666666;
+    margin-top: 0px;
+
+}
+
+.money3-2 {
+    width: 50%;
+    text-align: right;
+    font-weight: 700;
+    font-size: 30px;
+    color: #010326;
+    vertical-align: super;
+    margin-top: 0px;
+}
+
+.button2 {
+    display: flex;
+    margin-top: 24px;
+    height: 61px;
+}
+
+.buttonSave {
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #010326;
+    color: #F2F2F2;
+    border:0;
+    outline: 0;
+}
+
+.buttonBuy2{
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #F2C438;
+    color: #000000;
+    border:0;
+    outline: 0;
+}
+
+/* .container {
   display: grid;
   grid-template-areas:
     "header header header"
@@ -55,4 +274,4 @@
 
 .preView{
     background-image: url(/public/img/interior01Living.jpg);
-}
+} */

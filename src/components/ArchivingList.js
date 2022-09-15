@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 import styles from "./artists.module.css";
 
-function ArchivingList({id,artworkImg,artworkName,artworkSize,artworkCmSize,artworkDate}) {
+function ArchivingList ({id,artworkImg,artworkName,artworkSize,artworkCmSize,artworkDate}) {
     return (
         <container className={styles.containerGrid}>
             <div className={styles.artists}>
