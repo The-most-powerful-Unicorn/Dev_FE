@@ -7,22 +7,22 @@
 }
 
 .mainArtistImg1 {
-    width: 350px;
-    height: 320px;
+    width: 430px;
+    height: 400px;
     border-radius: 30px;
     transform: rotate(-9deg);
     margin-top: 50px;
 }
 
 .mainArtistImg2 {
-    width: 350px;
-    height: 320px;
+    width: 430px;
+    height: 400px;
     border-radius: 30px;
 }
 
 .mainArtistImg3 {
-    width: 350px;
-    height: 320px;
+    width: 430px;
+    height: 400px;
     border-radius: 30px;
     margin-top: 50px;
     transform: rotate(9deg);
