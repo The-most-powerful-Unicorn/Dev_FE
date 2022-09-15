@@ -104,15 +104,15 @@ function Home() {
         </div>
         <div className="block bg_white">
           <div className="space_empty"></div>
-          <div className="container container2">
-            <div className="item">
-              <h1 className='subject3'>뜨거운 여름,<br />보기만 해도 시원한 그림.</h1>
-            </div>
-            <div className="item item_RightUnder">
-              #태그1, #태그2, #태그3
-            </div>
+          <div className="containerContainer2">
+            <h1 className='subject3'>
+              뜨거운 여름,<br />보기만 해도 시원한 그림
+            </h1>
+            <p className="subject3-2">
+              #여름, #바다, #블루
+            </p>
           </div>
-          <div className="item3 slide_view">
+          <div className="item3 slide_view2">
             <SlideView
             />
             <div className="item"></div>
