@@ -8,7 +8,7 @@ function Archiving() {
     const {id} = useParams();
     const getArchiving = async () => {
         const json = await (
-            await fetch(`http://15.164.134.237:8080/artwork/artist?artistNum=${id}`)
+            await fetch(`//15.164.134.237:8080/artwork/artist?artistNum=${id}`)
             ).json();
             setArchiving(json);
             setLoading(false);

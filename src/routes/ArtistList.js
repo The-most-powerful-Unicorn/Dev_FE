@@ -8,7 +8,7 @@ function ArtistList(){
     const getArtists = async () => {
         const json = await (
             await fetch(
-            'http://15.164.134.237:8080/artist/artistList'
+            '//15.164.134.237:8080/artist/artistList'
             )
         ).json();
         setArtists(json);

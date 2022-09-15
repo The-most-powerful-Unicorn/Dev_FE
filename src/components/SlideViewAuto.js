@@ -10,7 +10,7 @@ function SlideViewAuto(){
   const getArtwokrs = async () =>{
     const json =await (
       await fetch(
-        'http://15.164.134.237:8080/artwork/list'
+        '//15.164.134.237:8080/artwork/list'
       )
     ).json();
     setArtworks(json);

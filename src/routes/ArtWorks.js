@@ -7,7 +7,7 @@ function ArtWorks(){
     const getArtWorks = async () => {
         const json = await (
             await fetch(
-            'http://15.164.134.237:8080/artwork/list'
+            '//15.164.134.237:8080/artwork/list'
             )
         ).json();
         setArtWorks(json);

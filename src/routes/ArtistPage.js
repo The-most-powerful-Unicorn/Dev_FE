@@ -46,16 +46,16 @@ function ArtistPage() {
 
 
     const [artworks, setArtworks] = useState([]);
-    const getArtwokrs = async () => {
+    const getArtworks = async () => {
         const json = await (
             await fetch(
-                `http://15.164.134.237:8080/artwork/artist?artistNum=${id}`
+                `//15.164.134.237:8080/artwork/artist?artistNum=${id}`
             )
         ).json();
         setArtworks(json);
     };
     useEffect(() => {
-        getArtwokrs();
+        getArtworks();
     }, []);  
     
     // {artworkNum: 2, artworkName: "24/7 OPEN", artistName: "라군선", artworkImg: "https://s3.ap-northeast-2.amazonaws.com/theo.artwork.sss.bucket/artwork/NaGoonSun02.png"}

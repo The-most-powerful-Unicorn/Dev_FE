@@ -7,6 +7,9 @@ import {
 import '../css-lib/ArtInfo.css'
 import '../css-lib/nonPageScroll.css'
 
+import Slider from "react-slick";
+
+
 function ArtworkPage() {
     const { id } = useParams();
 
@@ -14,7 +17,7 @@ function ArtworkPage() {
     const getArtwokrs = async () => {
         const json = await (
             await fetch(
-                `http://15.164.134.237:8080/artwork?num=${id}`
+                `//15.164.134.237:8080/artwork?num=${id}`
             )
         ).json();
         setArtworks(json);
@@ -23,8 +26,28 @@ function ArtworkPage() {
         getArtwokrs();
     }, []);
 
+    console.log(artworks);
 
+    const num = artworks.artistNum;
 
+    const [artLists, setartLists] = useState([]);
+    const getartLists = async () => {
+        const json = await (
+            await fetch(
+                `//15.164.134.237:8080/artwork/artist?artistNum=${num}`
+            )
+        ).json();
+        setartLists(json);
+    };
+    useEffect(() => {
+        getartLists();
+    }, []);  
+
+    
+
+    console.log(artLists);
+
+    // artistNum: 1
     // artworkCmSize: "116.8*91.0㎝"
     // artworkDate: 2022
     // artworkImgUrl: "https://s3.ap-northeast-2.amazonaws.com/theo.artwork.sss.bucket/artwork/NaGoonSun02.png"
@@ -53,8 +76,18 @@ function ArtworkPage() {
 
     const imgChange = (bgImg) => {
         setPreImg(bgImg);
-        console.log(bgImg);
     };
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        width:100,
+        variablewWidth:true,
+        gap:10,
+      };
 
     return (
         <div className="body">
@@ -195,6 +228,20 @@ function ArtworkPage() {
                 </div>
             </div>
             <div className="">{artworks.artworkInfo}</div>
+            <div>
+            {/* <Slider {...settings}
+                                >
+                                    {artLists && artLists.map(artLists => {
+                                        return (
+                                            <div>
+                                                <a href="">
+                                                    <img src={artLists.artworkImg} />
+                                                </a>
+                                            </div>
+                                        )
+                                    })}
+                                </Slider> */}
+            </div>
         </div>
     );
 }
