@@ -69,9 +69,11 @@ function Home() {
                 지금, 내 집에 걸어 놓을 수 있는<br />
                 <b>제주 로컬 미술작품</b>을 만나보세요
               </h1>
-              <a href=""
-                className="btn-btn-yellow"
-              >작품 더보기</a>
+              <Link to='/artWorks'>
+                <div
+                  className="btn-btn-yellow"
+                >작품 더보기</div>
+              </Link>
             </div>
           </div>
         </div>
@@ -87,14 +89,16 @@ function Home() {
                             }} >
             <span className="mask"
             >
-              <a href="">
-                <img
-                  src="/img/Gogh-Starry-Night.jpg"
-                  style={{
-                    width: "25vw"
-                  }} />
-                  <span className="cap">text</span>
-              </a>
+              
+                <Link to='/'>
+                  <img
+                    src="/img/Gogh-Starry-Night.jpg"
+                    style={{
+                      width: "25vw"
+                    }} />
+                    <span className="cap">text</span>
+                </Link>
+            
             </span>
           </div>
         </div>

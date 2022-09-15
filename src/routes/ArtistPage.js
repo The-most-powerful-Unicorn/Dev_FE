@@ -4,7 +4,6 @@ import React, { useEffect, useState, useRef } from "react";
 import ReactPageScoller from "react-page-scroller";
 import Slider from "react-slick";
 
-import ArtworksList from '../components/ArchivingList';
 import TimeLine from '../components/TimeLine';
 
 import { useParams } from 'react-router-dom';
@@ -17,6 +16,7 @@ import '../css-lib/ArtistInfo.css';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ArchivingList from "../components/ArchivingList";
 
 
 
@@ -184,7 +184,7 @@ function ArtistPage() {
                 </div>
                 <div style={{textAlign:"center"}}>
                     {artworks.map((artworks) => (
-                        <ArtworksList
+                        <ArchivingList
                             key={artworks.id}
                             id={artworks.artworkNum}
                             artworkImg={artworks.artworkImg}
