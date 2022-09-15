@@ -4,7 +4,7 @@ import React from 'react'
 function Footer() {
     return (
         <footer>
-            <img src="img/footer_back.png" />
+            <img src="img/footer_back.png" style={{width:"100%", height:"378px"}}/>
             <img className="footerlogo" src="img/logo-2.png" alt="theo_logo" />
             <ul className="footer1">
                 <li>상호명 : THEO</li>
