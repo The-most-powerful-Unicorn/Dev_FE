@@ -17,7 +17,7 @@ function ArtworkPage() {
     const getArtwokrs = async () => {
         const json = await (
             await fetch(
-                `//15.164.134.237:8080/artwork?num=${id}`
+                `https://api.jaehyunking.com/artwork?num=${id}`
             )
         ).json();
         setArtworks(json);
@@ -92,18 +92,16 @@ function ArtworkPage() {
 
 
     const changeBuy = () => {
-        if(styleBuy==='moneyActive'){
+        if (styleBuy === 'moneyActive') {
             setStyleBuy("money_hidden");
-        }else{
-            setStyleBuy("moneyActive");
-        }
+            setStyleRental("moneyActive")
+        };
     };
 
     const changeRental = () => {
-        if(styleRental==='moneyActive'){
+        if (styleRental === 'moneyActive') {
             setStyleRental("money_hidden");
-        }else{
-            setStyleRental("moneyActive");
+            setStyleBuy("moneyActive");
         };
     };
 
@@ -123,7 +121,7 @@ function ArtworkPage() {
                 <div className="containerInfo">
                     <div className="containerInfo-subject">
                         <h1 className="containerInfo-subject1">{artworks.artworkName}</h1>
-                        <h2 className="containerInfo-subject2">{artworks.artistName}</h2>
+                        <Link to={`/ArtistPage/${artworks.artistNum}`}><h2 className="containerInfo-subject2">{artworks.artistName}</h2></Link >
                     </div>
                     <div className="artworkInfo">
                         <div className="artworkInfo1">
@@ -139,10 +137,10 @@ function ArtworkPage() {
                             <div className="button1">
                                 {/* <button className="buttonRental" type="button">렌탈하기</button>
                                 <button className="buttonBuy">구매하기</button> */}
-                                <input type="radio" name="maker" value="1" id="apple" onClick={()=>{changeBuy();changeRental();}}/>
+                                <input type="radio" name="maker" value="1" id="apple" onClick={() => { changeBuy(); changeRental(); }} />
                                 <label for="apple" className="label">렌탈하기</label>
 
-                                <input type="radio" name="maker" value="2" id="pineapple" onClick={()=>{changeBuy();changeRental();}}/>
+                                <input type="radio" name="maker" value="2" id="pineapple" onClick={() => { changeBuy(); changeRental(); }} />
                                 <label for="pineapple" className="label">구매하기</label>
                             </div>
                             <div className={styleRental}>
@@ -166,16 +164,16 @@ function ArtworkPage() {
                             </div>
                             <div className={styleBuy}>
                                 <div className="money1">
-                                    <p className="money1-3">렌탈가</p>
-                                    <p className="money1-4">월 {artworkRental.toLocaleString()}원</p>
-                                    <p className="money1-1">구매가</p>
-                                    <p className="money1-2">{artworkSell.toLocaleString()}원</p>
+                                    <p className="money1-1-b">렌탈가</p>
+                                    <p className="money1-2-b">월 {artworkRental.toLocaleString()}원</p>
+                                    <p className="money1-3-b">구매가</p>
+                                    <p className="money1-4-b">{artworkSell.toLocaleString()}원</p>
                                 </div>
                                 <div className="money2">
-                                    <p className="money1-3">렌탈기간</p>
-                                    <p className="money1-4">3개월</p>
-                                    <p className="money1-3">&nbsp;</p>
-                                    <p className="money1-4">&nbsp;</p>
+                                    <p className="money2-1-b">렌탈기간</p>
+                                    <p className="money2-2-b">3개월</p>
+                                    <p className="money2-3">&nbsp;</p>
+                                    <p className="money2-4">&nbsp;</p>
                                 </div>
                                 <hr></hr>
                                 <div className="money3">
@@ -191,103 +189,103 @@ function ArtworkPage() {
                     </div>
                 </div>
             </div>
-                <h2 className="subjectItr">인테리어 해보기</h2>
-                <div className="containerItr">
-                    <div className="sidePreView"
+            <h2 className="subjectItr">인테리어 해보기</h2>
+            <div className="containerItr">
+                <div className="sidePreView"
+                    style={{
+                        backgroundImage: `url(${preImg})`,
+                        backgroundPosition: "center center"
+                    }}>
+                    <img
                         style={{
-                            backgroundImage: `url(${preImg})`,
-                            backgroundPosition: "center center"
-                        }}>
-                        <img
-                            style={{
-                                position:"absolute",
-                                left:"27%",
-                                marginTop:"38px",
-                                height: "28vh",
-                                boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.25)"
-                            }}
-                            src={artworks.artworkImgUrl} />
+                            position: "absolute",
+                            left: "27%",
+                            marginTop: "38px",
+                            height: "28vh",
+                            boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.25)"
+                        }}
+                        src={artworks.artworkImgUrl} />
+                </div>
+                <div className="button_wrap">
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior01Living.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior01Living.jpg' />
+                        </button>
+                        <div className="buttonInfo">거실</div>
                     </div>
-                    <div className="button_wrap">
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior01Living.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior01Living.jpg' />
-                            </button>
-                            <div className="buttonInfo">거실</div>
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior02Shop.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior02Shop.jpg' />
-                            </button>
-                            <div className="buttonInfo">샵</div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior02Shop.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior02Shop.jpg' />
+                        </button>
+                        <div className="buttonInfo">샵</div>
 
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior03Room.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior03Room.jpg' />
-                            </button>
-                            <div className="buttonInfo">방</div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior03Room.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior03Room.jpg' />
+                        </button>
+                        <div className="buttonInfo">방</div>
 
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior04Desk.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior04Desk.jpg' />
-                            </button>
-                            <div className="buttonInfo">서재</div>
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior05Bed.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior05Bed.jpg' />
-                            </button>
-                            <div className="buttonInfo">침실1</div>
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior06Bed2.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior06Bed2.jpg' />
-                            </button>
-                            <div className="buttonInfo">침실2</div>
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior07Dining.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior07Dining.jpg' />
-                            </button>
-                            <div className="buttonInfo">식당</div>
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior08Office.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior08Office.jpg' />
-                            </button>
-                            <div className="buttonInfo">사무실</div>
-                        </div>
-                        <div className="" >
-                            <button onClick={() => imgChange('../img/interior09Black.jpg')}>
-                                <img
-                                    className='button_interior'
-                                    src='../img/interior09Black.jpg' />
-                            </button>
-                            <div className="buttonInfo">검정벽</div>
-                        </div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior04Desk.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior04Desk.jpg' />
+                        </button>
+                        <div className="buttonInfo">서재</div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior05Bed.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior05Bed.jpg' />
+                        </button>
+                        <div className="buttonInfo">침실1</div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior06Bed2.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior06Bed2.jpg' />
+                        </button>
+                        <div className="buttonInfo">침실2</div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior07Dining.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior07Dining.jpg' />
+                        </button>
+                        <div className="buttonInfo">식당</div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior08Office.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior08Office.jpg' />
+                        </button>
+                        <div className="buttonInfo">사무실</div>
+                    </div>
+                    <div className="" >
+                        <button onClick={() => imgChange('../img/interior09Black.jpg')}>
+                            <img
+                                className='button_interior'
+                                src='../img/interior09Black.jpg' />
+                        </button>
+                        <div className="buttonInfo">검정벽</div>
                     </div>
                 </div>
-                <h2 className="subjectItr">작가 노트</h2>
+            </div>
+            <h2 className="subjectItr">작가 노트</h2>
 
-            
+
             <div className="artworkNote">
                 <div className="artworkNoteText">
                     "{artworks.artworkInfo}"

@@ -1,13 +1,13 @@
 import '../App.css';
 import React, { useEffect, useState, useRef } from "react";
-import {Link} from'react-router-dom';
+import { Link } from 'react-router-dom';
 import ReactPageScoller from "react-page-scroller";
 
 import '../css-lib/button.css';
 import '../css-lib/Scroll.css';
 
 import SlideView from '../components/SlideView';
-import SlideViewArtist from'../components/SlideViewArtist';
+import SlideViewArtist from '../components/SlideViewArtist';
 
 import Footer from '../Footer';
 
@@ -41,18 +41,18 @@ function ScrollComponent() {
 
 function Home() {
 
-  const [artworks, setArtworks]= useState([]);
-  const getArtwokrs = async () =>{
-    const json =await (
+  const [artworks, setArtworks] = useState([]);
+  const getArtwokrs = async () => {
+    const json = await (
       await fetch(
         'http://15.164.134.237:8080/artwork/list'
       )
     ).json();
     setArtworks(json);
   };
-  useEffect(()=>{
+  useEffect(() => {
     getArtwokrs();
-  },[]);
+  }, []);
 
   return (
 
@@ -84,22 +84,19 @@ function Home() {
             집에서 <b>예술</b>을 즐기는 가장 <b>쉬운</b> 방법
           </h1>
           <div className="bgDU"
-                            style={{
-                              width: "25vw"
-                            }} >
-            <span className="mask"
-            >
-              
-                <Link to='/'>
-                  <img
-                    src="/img/Gogh-Starry-Night.jpg"
-                    style={{
-                      width: "25vw"
-                    }} />
-                    <span className="cap">text</span>
-                </Link>
-            
-            </span>
+            style={{
+              width: "25vw"
+            }} >
+            <Link to='/About'>
+              <span className="mask">
+                <img
+                  src="/img/Gogh-Starry-Night.jpg"
+                  style={{
+                    width: "25vw"
+                  }} />
+                <span className="cap">text</span>
+              </span>
+            </Link>
           </div>
         </div>
         <div className="block bg_white">
@@ -121,7 +118,7 @@ function Home() {
         <div className="block bg_white">
           <div className="space_empty"></div>
 
-            <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
+          <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
 
           <div className="">
             <div className="item slide_view">

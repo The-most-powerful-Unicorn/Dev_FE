@@ -28,7 +28,7 @@ function ArtistPage() {
     const getArtists = async () => {
         const json = await (
             await fetch(
-                `http:https://api.jaehyunking.com/artist?number=${id}`
+                `https://api.jaehyunking.com/artist?number=${id}`
             )
         ).json();
         setArtists(json);
