@@ -18,7 +18,7 @@ function ArtWorks(){
     }, []); 
     return (
     <div
-    style={{display: "flex" , justifycontents: "center", alignItem : "center"}}>
+    style={{display: "flex" , justifycontents: "center", alignItem : "center", marginTop : "200px"}}>
         {loading ? (
         <h1>artworks</h1>
         ) : (

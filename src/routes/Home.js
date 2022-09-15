@@ -121,7 +121,7 @@ function Home() {
           <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
             <div className='mainArtist' >
               <div>
-                <Link to='/ArtistPage/2'><img className='mainArtistImg1' src='../img/mainArtist1.jpeg'></img></Link>
+                <Link to='/ArtistPage/2'><img className='mainArtistImg1' src='../img/mainArtist1.jpg'></img></Link>
               </div>
               <div>
                 <Link to='/ArtistPage/1'><img className='mainArtistImg2' src='../img/mainArtist2.png'></img></Link>
