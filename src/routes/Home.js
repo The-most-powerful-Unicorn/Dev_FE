@@ -5,6 +5,7 @@ import ReactPageScoller from "react-page-scroller";
 
 import '../css-lib/button.css';
 import '../css-lib/Scroll.css';
+import '../css-lib/Home.css';
 
 import SlideView from '../components/SlideView';
 import SlideViewArtist from'../components/SlideViewArtist';
@@ -121,15 +122,15 @@ function Home() {
         <div className="block bg_white">
           <div className="space_empty"></div>
             <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
-            <div>
+            <div className='mainArtist' >
               <div>
-                <img className='mainArtistImg1' src='/public/img/mainArtist1.jpeg'></img>
+                <Link to='/'><img className='mainArtistImg1' src='../img/mainArtist1.jpeg'></img></Link>
               </div>
               <div>
-                <img src='' className='mainArtistImg2'></img>
+                <Link to='/'><img className='mainArtistImg2' src='../img/mainArtist2.png'></img></Link>
               </div>
               <div>
-                <img src='' className='mainArtistImg3'></img>
+                <Link to='/'><img className='mainArtistImg3' src='../img/mainArtist3.png'></img></Link>
               </div>
             </div>
             

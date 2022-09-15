@@ -1,0 +1,29 @@
+.mainArtist {
+    width: 100%;
+    height: 510px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.mainArtistImg1 {
+    width: 350px;
+    height: 320px;
+    border-radius: 30px;
+    transform: rotate(-9deg);
+    margin-top: 50px;
+}
+
+.mainArtistImg2 {
+    width: 350px;
+    height: 320px;
+    border-radius: 30px;
+}
+
+.mainArtistImg3 {
+    width: 350px;
+    height: 320px;
+    border-radius: 30px;
+    margin-top: 50px;
+    transform: rotate(9deg);
+}
