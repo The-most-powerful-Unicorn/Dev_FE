@@ -67,7 +67,7 @@ function ArtistPage() {
     const getExhi = async () => {
         const json = await (
             await fetch(
-                `http:https://api.jaehyunking.com/exhibition/list?artistNum=${id}`
+                `https://api.jaehyunking.com/exhibition/list?artistNum=${id}`
             )
         ).json();
         setExhi(json);
