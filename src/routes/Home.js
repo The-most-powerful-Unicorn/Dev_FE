@@ -124,13 +124,13 @@ function Home() {
             <h1 className='subject4'>지금<br />주목해야 할 <b>작가</b></h1>
             <div className='mainArtist' >
               <div>
-                <Link to='/'><img className='mainArtistImg1' src='../img/mainArtist1.jpeg'></img></Link>
+                <Link to='/ArtistPage/2'><img className='mainArtistImg1' src='../img/mainArtist1.jpeg'></img></Link>
               </div>
               <div>
-                <Link to='/'><img className='mainArtistImg2' src='../img/mainArtist2.png'></img></Link>
+                <Link to='/ArtistPage/1'><img className='mainArtistImg2' src='../img/mainArtist2.png'></img></Link>
               </div>
               <div>
-                <Link to='/'><img className='mainArtistImg3' src='../img/mainArtist3.png'></img></Link>
+                <Link to='/ArtistPage/3'><img className='mainArtistImg3' src='../img/mainArtist3.png'></img></Link>
               </div>
             </div>
             
