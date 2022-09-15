@@ -1,5 +1,7 @@
 import ArtWorksList from "../components/ArtWorksList.js"
 import {useState, useEffect} from "react";
+import Footer from '../Footer';
+
 
 function ArtWorks(){
     const [loading, setLoading] = useState(true);

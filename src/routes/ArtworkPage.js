@@ -200,9 +200,9 @@ function ArtworkPage() {
                     <img
                         style={{
                             position: "absolute",
-                            left: "27%",
+                            left: "30%",
                             marginTop: "38px",
-                            height: "28vh",
+                            height: "25vh",
                             boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.25)"
                         }}
                         src={artworks.artworkImgUrl} />
