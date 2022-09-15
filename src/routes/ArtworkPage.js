@@ -28,24 +28,22 @@ function ArtworkPage() {
 
     console.log(artworks);
 
-    const num = artworks.artistNum;
+    const artistNum = artworks.artistNum;
+    console.log(artistNum);
 
-    const [artLists, setartLists] = useState([]);
-    const getartLists = async () => {
-        const json = await (
-            await fetch(
-                `//15.164.134.237:8080/artwork/artist?artistNum=${num}`
-            )
-        ).json();
-        setartLists(json);
-    };
-    useEffect(() => {
-        getartLists();
-    }, []);  
+    // const [artLists, setartLists] = useState([]);
+    // const getartLists = async () => {
+    //     const json = await (
+    //         await fetch(
+    //             `//15.164.134.237:8080/artwork/artist?artistNum=${artistNum}`
+    //         )
+    //     ).json();
+    //     setartLists(json);
+    // };
+    // useEffect(() => {
+    //     getartLists();
+    // }, []);  
 
-    
-
-    console.log(artLists);
 
     // artistNum: 1
     // artworkCmSize: "116.8*91.0㎝"
