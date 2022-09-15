@@ -111,7 +111,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    margin-top: 18px;
+    margin-top: 12px;
 }
 .money1-1 {
     width: 25%;
@@ -168,6 +168,7 @@
     font-weight: 500;
     line-height: 26px;
     margin-top: 22px;
+    margin-bottom: 0px;
 }
 
 .money3-1 {
@@ -186,6 +187,8 @@
     color: #010326;
     vertical-align: super;
     margin-top: 0px;
+    margin-bottom: 0px;
+
 }
 
 .button2 {
@@ -248,6 +251,10 @@
     row-gap: 3%;
     justify-content: end;
 
+}
+
+.button_wrap button {
+    border: solid 1px #CCCCCC;
 }
 
 .button_wrap img{
