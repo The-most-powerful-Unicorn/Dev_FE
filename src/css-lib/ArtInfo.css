@@ -221,3 +221,51 @@
     border:0;
     outline: 0;
 }
+
+.subjectItr {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+    margin-top: 123px;
+}
+
+.containerItr {
+    margin-top: 43px;
+    display: flex;
+}
+.sidePreView {
+    width: 50%;
+}
+.button_wrap {
+    display: grid;
+    grid-template-columns: 136px 136px 136px;
+    grid-template-rows: 176px 176px 176px;
+    float: right;
+    width: 50%;
+    column-gap: 5%;
+    row-gap: 3%;
+    justify-content: end;
+
+}
+
+.button_wrap img{
+    width: 136px;
+}
+
+.buttonInfo{
+    margin-top: 6px;
+    margin-left: 6px;
+    text-align: center;
+}
+
+.artworkInfo {
+    margin-top: 100px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}

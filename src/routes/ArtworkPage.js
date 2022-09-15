@@ -113,17 +113,21 @@ function ArtworkPage() {
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                    <h2 className="head">인태리어 해보기</h2>
-                    <div className="side preView"
+            </div>
+                <h2 className="subjectItr">인테리어 해보기</h2>
+                <div className="containerItr">
+                    <div className="sidePreView"
                         style={{
-                            height: "100vh",
-                            width: "50vw",
-                            backgroundImage: `url(${preImg})`
+                            backgroundImage: `url(${preImg})`,
+                            backgroundPosition: "center center"
                         }}>
                         <img
                             style={{
-                                height: "30vh",
+                                position:"absolute",
+                                left:"27%",
+                                marginTop:"38px",
+                                height: "28vh",
+                                boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.25)"
                             }}
                             src={artworks.artworkImgUrl} />
                     </div>
@@ -134,6 +138,7 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior01Living.jpg' />
                             </button>
+                            <div className="buttonInfo">거실</div>
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior02Shop.jpg')}>
@@ -141,6 +146,8 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior02Shop.jpg' />
                             </button>
+                            <div className="buttonInfo">샵</div>
+
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior03Room.jpg')}>
@@ -148,6 +155,8 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior03Room.jpg' />
                             </button>
+                            <div className="buttonInfo">방</div>
+
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior04Desk.jpg')}>
@@ -155,6 +164,7 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior04Desk.jpg' />
                             </button>
+                            <div className="buttonInfo">서재</div>
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior05Bed.jpg')}>
@@ -162,6 +172,7 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior05Bed.jpg' />
                             </button>
+                            <div className="buttonInfo">침실1</div>
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior06Bed2.jpg')}>
@@ -169,6 +180,7 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior06Bed2.jpg' />
                             </button>
+                            <div className="buttonInfo">침실2</div>
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior07Dining.jpg')}>
@@ -176,6 +188,7 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior07Dining.jpg' />
                             </button>
+                            <div className="buttonInfo">식당</div>
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior08Office.jpg')}>
@@ -183,6 +196,7 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior08Office.jpg' />
                             </button>
+                            <div className="buttonInfo">사무실</div>
                         </div>
                         <div className="" >
                             <button onClick={() => imgChange('../img/interior09Black.jpg')}>
@@ -190,11 +204,12 @@ function ArtworkPage() {
                                     className='button_interior'
                                     src='../img/interior09Black.jpg' />
                             </button>
+                            <div className="buttonInfo">검정벽</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="">{artworks.artworkInfo}</div>
+            
+            <div className="artworkInfo">{artworks.artworkInfo}</div>
         </div>
     );
 }
