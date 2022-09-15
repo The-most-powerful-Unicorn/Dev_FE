@@ -15,7 +15,7 @@ function Header() {
                 <h1 id="logo">
                             <Link to='/'>
                                 <img
-                                    src="./img/logo-2.png"/></Link>
+                                    src="http://localhost:3000/img/logo-2.png"/></Link>
                 </h1>
                 <ul id="header-nav">
                     <li><span className="header-navBtn ">About</span>
@@ -51,13 +51,13 @@ function Header() {
                 </ul>
                 <ul id="header-nav2">
                     <li>
-                        <span className="header-icon "><img src='./img/heart_black.png' width='22' /></span>
+                        <span className="header-icon "><img src='http://localhost:3000/img/heart_black.png' width='22' /></span>
                     </li>
                     <li>
-                        <span className="header-icon"><img src='./img/shopping_black.png' width='22' /></span>
+                        <span className="header-icon"><img src='http://localhost:3000/img/shopping_black.png' width='22' /></span>
                     </li>
                     <li>
-                        <span className="header-icon"><img src='./img/search_black.png' width='22' /></span>
+                        <span className="header-icon"><img src='http://localhost:3000/img/search_black.png' width='22' /></span>
                     </li>
                     <li>
                         <span className="header-icon btn btn-black">로그인</span>

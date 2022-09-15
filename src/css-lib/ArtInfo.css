@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .body {
     width: 1100px;
     margin: 0 auto;
@@ -144,7 +151,7 @@ input[type="radio"]:checked + label {
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    margin-top: 18px;
+    margin-top: 12px;
 }
 .money1-1 {
     width: 25%;
@@ -200,6 +207,7 @@ input[type="radio"]:checked + label {
     font-weight: 500;
     line-height: 26px;
     margin-top: 22px;
+    margin-bottom: 0px;
 }
 
 .money3-1 {
@@ -218,6 +226,8 @@ input[type="radio"]:checked + label {
     color: #010326;
     vertical-align: super;
     margin-top: 0px;
+    margin-bottom: 0px;
+
 }
 
 .button2 {
@@ -252,4 +262,81 @@ input[type="radio"]:checked + label {
     color: #000000;
     border:0;
     outline: 0;
+}
+
+.subjectItr {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+    margin-top: 123px;
+}
+
+.containerItr {
+    margin-top: 43px;
+    display: flex;
+}
+.sidePreView {
+    width: 50%;
+}
+.button_wrap {
+    display: grid;
+    grid-template-columns: 136px 136px 136px;
+    grid-template-rows: 176px 176px 176px;
+    float: right;
+    width: 50%;
+    column-gap: 5%;
+    row-gap: 3%;
+    justify-content: end;
+
+}
+
+.button_wrap button {
+    border: solid 1px #CCCCCC;
+}
+
+.button_wrap img{
+    width: 136px;
+}
+
+.buttonInfo{
+    margin-top: 6px;
+    margin-left: 6px;
+    text-align: center;
+}
+
+.artworkInfo {
+    margin-top: 30px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.artworkNote {
+    width: 100%;
+    height: 350px;
+    background-image: url(/public/img/artistNotePaper.jpg);
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    text-indent: 10px;
+    color: #000000;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 200px;
+}
+
+.artworkNoteText {
+    font-family: 'RIDIBatang';
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
