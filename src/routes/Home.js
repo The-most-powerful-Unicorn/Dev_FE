@@ -95,7 +95,7 @@ function Home() {
                   style={{
                     width: "25vw"
                   }} />
-                <span className="cap">text</span>
+                <span className="cap">서비스 소개 보러가기</span>
               </span>
             </Link>
           </div>
